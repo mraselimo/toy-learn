@@ -1,0 +1,237 @@
+
+
+Initial grammar loaded:
+start: t0
+t0: t0 t0
+    | "="
+    | "{"
+    | "}"
+    | "."
+    | ";"
+    | ":"
+    | "+"
+    | "("
+    | ")"
+    | talphanums
+talphanums: talphanum
+    | talphanum talphanums
+talphanum: "a"
+    | "b"
+    | "c"
+    | "d"
+    | "e"
+    | "f"
+    | "g"
+    | "h"
+    | "i"
+    | "j"
+    | "k"
+    | "l"
+    | "m"
+    | "n"
+    | "o"
+    | "p"
+    | "q"
+    | "r"
+    | "s"
+    | "t"
+    | "u"
+    | "v"
+    | "w"
+    | "x"
+    | "y"
+    | "z"
+    | "A"
+    | "B"
+    | "C"
+    | "D"
+    | "E"
+    | "F"
+    | "G"
+    | "H"
+    | "I"
+    | "J"
+    | "K"
+    | "L"
+    | "M"
+    | "N"
+    | "O"
+    | "P"
+    | "Q"
+    | "R"
+    | "S"
+    | "T"
+    | "U"
+    | "V"
+    | "W"
+    | "X"
+    | "Y"
+    | "Z"
+    | "0"
+    | "1"
+    | "2"
+    | "3"
+    | "4"
+    | "5"
+    | "6"
+    | "7"
+    | "8"
+    | "9"
+Precision set (size 51):
+    =}
+    )
+    ;(
+    +
+    =
+    i
+    h
+    .+)
+    Wjrp87
+    tN
+    }
+    :
+    N
+    =;
+    ;)
+    x
+    ;};
+    D
+    :=
+    FJi
+    {)
+    k2
+    WB
+    6y
+    J
+    Dz
+    .
+    {
+    P
+    +;=
+    =:
+    ={
+    )N
+    ;
+    0
+    :++
+    +)
+    d
+    ;;
+    97
+    =+
+    8
+    :.
+    L
+    :+
+    53S
+    .Wu
+    ;;}
+    F
+    jzL
+    (
+Recall set (size 51):
+    program id = { id = id + (id); } .
+  <----- FAILURE
+    program id = { id = (id) = id; } .
+  <----- FAILURE
+    program id = { while id + id do sleep; } .
+  <----- FAILURE
+    program id = { id = id = (id); } .
+  <----- FAILURE
+    program id = { if id then id = id; } .
+  <----- FAILURE
+    program id = { if id then sleep else sleep; } .
+  <----- FAILURE
+    program id = { while id do sleep; } .
+  <----- FAILURE
+    program id = { var id : bool; var id : bool; } .
+  <----- FAILURE
+    program id = { id = (id) + id; } .
+  <----- FAILURE
+    program id = { while(id) do sleep; } .
+  <----- FAILURE
+    program id = { var id : bool; } .
+  <----- FAILURE
+    program id = { id = id + id; } .
+  <----- FAILURE
+    program id = { id = id = 21; } .
+  <----- FAILURE
+    program id = { id = id + id = id; } .
+  <----- FAILURE
+    program id = { sleep; sleep; } .
+  <----- FAILURE
+    program id = { if id = id then sleep; } .
+  <----- FAILURE
+    program id = { id = 21 + id; } .
+  <----- FAILURE
+    program id = { { }; } .
+  <----- FAILURE
+    program id = { while id do if id then sleep; } .
+  <----- FAILURE
+    program id = { while 21 do sleep; } .
+  <----- FAILURE
+    program id = { id = id + id + id; } .
+  <----- FAILURE
+    program id = { id = 21 = id; } .
+  <----- FAILURE
+    program id = { if(id) then sleep; } .
+  <----- FAILURE
+    program id = { id = 21; } .
+  <----- FAILURE
+    program id = { id = (id); } .
+  <----- FAILURE
+    program id = { while id do id = id; } .
+  <----- FAILURE
+    program id = { id = (id + id); } .
+  <----- FAILURE
+    program id = { if id + id then sleep; } .
+  <----- FAILURE
+    program id = { if id then sleep else if id then sleep; } .
+  <----- FAILURE
+    program id = { if id then { }; } .
+  <----- FAILURE
+    program id = { id = (21); } .
+  <----- FAILURE
+    program id = { while id = id do sleep; } .
+  <----- FAILURE
+    program id = { if 21 then sleep; } .
+  <----- FAILURE
+    program id = { if id then sleep else while id do sleep; } .
+  <----- FAILURE
+    program id = { id = id + 21; } .
+  <----- FAILURE
+    program id = { id = ((id)); } .
+  <----- FAILURE
+    program id = { id = id = id; } .
+  <----- FAILURE
+    program id = { } .
+  <----- FAILURE
+    program id = { id = id; } .
+  <----- FAILURE
+    program id = { if id then sleep else { }; } .
+  <----- FAILURE
+    program id = { if id then sleep else id = id; } .
+  <----- FAILURE
+    program id = { if id then if id then sleep; } .
+  <----- FAILURE
+    program id = { id = id = id = id; } .
+  <----- FAILURE
+    program id = { if id then sleep; } .
+  <----- FAILURE
+    program id = { while id do while id do sleep; } .
+  <----- FAILURE
+    program id = { id = id = id + id; } .
+  <----- FAILURE
+    program id = { sleep; } .
+  <----- FAILURE
+    program id = { while id do { }; } .
+  <----- FAILURE
+    program id = { var id : int; } .
+  <----- FAILURE
+    program id = { id = (id = id); } .
+  <----- FAILURE
+    program id = { if id then while id do sleep; } .
+  <----- FAILURE
+Recall: 0.0, Precision: 1.0
+Example gen time: 0.01813197135925293
+Scoring time: 4.063114166259766
