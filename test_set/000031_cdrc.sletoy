@@ -1,0 +1,1 @@
+program id = { if id then sleep else while id do sleep; } .
